@@ -134,4 +134,8 @@ int main(){
     changeMatrixDivisibleFive(matrix, N);
     printf("\nNew matrix after replacing numbers, which are divisible by 5 with zeros: \n");
     printMatrix(matrix, N);
+
+
+    free(matrix);
+    return 0;
 }
