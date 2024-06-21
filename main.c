@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MINVALUE -10
-#define MAXVALUE 10
+#define MINVALUE -100
+#define MAXVALUE 100
 
 void generateMatrix(short **matrix, int N){
-    srand(time(NULL));
     for(int i = 0; i < N; ++i)
         for(int j = 0; j < N; ++j){
             matrix[i][j] = (rand()%(MAXVALUE-MINVALUE+1)) + MINVALUE;
@@ -22,7 +21,7 @@ void printMatrix(short **matrix, int N){
     }
 }
 
-int sumDiag(short **matrix, int N){
+int sumOfDiagonals(short **matrix, int N){
     int sumDiag = 0;
     for(int i = 0; i < N; ++i){
          sumDiag += matrix[i][i];
@@ -31,7 +30,7 @@ int sumDiag(short **matrix, int N){
     return sumDiag;
 }
 
-int minValueMainDiag(short **matrix, int N){
+int minValueOfMainDiagonal(short **matrix, int N){
     int minValue = MAXVALUE+1;
     for(int i = 0; i<N; ++i){
         for(int j = i + 1; j < N; j++){
@@ -43,10 +42,10 @@ int minValueMainDiag(short **matrix, int N){
     return minValue;
 }
 
-int maxValueSubDiag(short **matrix, int N){
+int maxValueOfSubDiagonal(short **matrix, int N){
     int maxValue = MINVALUE-1;
-    for(int i = 1; i<N; ++i){
-        for(int j = 4; j > N-i-1; --j){
+    for(int i = 0; i<N; ++i){
+        for(int j = 4; j >= N-i-1; --j){
             if(matrix[i][j] > maxValue){
                 maxValue = matrix[i][j];
             }
@@ -68,7 +67,7 @@ double averageMatrixValue(short **matrix, int N){
     return ((double)sumMatrix / matrixValue);
 }
 
-void checkElements(short **matrix, int N){
+void checkElementsGreaterThanAverage(short **matrix, int N){
     double average = averageMatrixValue(matrix, N);
     printf("\nElements greater than average(%f): \n", average);
     for(int i = 0; i<N;++i){
@@ -91,7 +90,7 @@ void changeMatrixNegative(short **matrix, int N){
     }
 }
 
-void changeMatrixDivideFive(short **matrix, int N){
+void changeMatrixDivisibleFive(short **matrix, int N){
     for(int i = 0; i < N; ++i){
         for(int j = 0; j < N; ++j){
             if(matrix[i][j]%5==0){
@@ -117,22 +116,22 @@ int main(){
         matrix[i] = (short*)malloc(N*sizeof(short));
     }
 
-
+    srand(time(NULL));
     generateMatrix(matrix, N);
     printf("Original matrix: \n");
     printMatrix(matrix, N);
 
-    printf("\nSum of diags: %i\n", sumDiag(matrix, N));
-    printf("\nMinValue: %i\n", minValueMainDiag(matrix, N));
-    printf("\nMaxValue: %i\n", maxValueSubDiag(matrix, N));
+    printf("\nSum of diags: %i\n", sumOfDiagonals(matrix, N));
+    printf("\nMinValue: %i\n", minValueOfMainDiagonal(matrix, N));
+    printf("\nMaxValue: %i\n", maxValueOfSubDiagonal(matrix, N));
 
-    checkElements(matrix, N);
+    checkElementsGreaterThanAverage(matrix, N);
 
     changeMatrixNegative(matrix, N);
     printf("\nNew matrix after replacing negative numbers: \n");
     printMatrix(matrix, N);
 
-    changeMatrixDivideFive(matrix, N);
+    changeMatrixDivisibleFive(matrix, N);
     printf("\nNew matrix after replacing numbers, which are divisible by 5 with zeros: \n");
     printMatrix(matrix, N);
 }
