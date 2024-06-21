@@ -1,17 +1,17 @@
 # Matrix
-Программа, которая выполняет следующее:
+A program, that performs the following:
 
-<!--описание действий-->
-## Описание действий
+<!--task description-->
+## Task description
 
-| Описание и последовательность                                                                                                                    |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Генерация матрицы размером NxN; N должно быть больше или равно 5;                                                                                |
-| Заполнение матрицы случайными целыми числами в диапазоне от -100 до 100;                                                                         |
-| Вывод исходной матрицы на экран;                                                                                                                 |
-| Нахождение и вывод суммы элементов, расположенных по обеим диагоналям;                                                                           |
-| Нахождение и вывод минимального значения среди всех элементов, которые находятся выше главной диагонали (не включая её саму);                    |
-| Нахождение вы вывод максимального значения среди всех элементов, которые находятся ниже побочной диагонали (не включая саму диагональ);          |
-| Подсчет и вывод количества элементов, Значения которых больше среднего арифметического всех элементов матрицы;                                   |
-| Замена всех отрицательных элементов матрицы на их абсолютные значения и вывод модифицированной матрицы;                                          |
-| Замена всех элементов, которые делятся на 5, на нули и вывод конечной матрицы;                                                                   |
+| Description and sequence                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------------- |
+| Generating a matrix of size NxN; N must be greater than or equal to 5;                                                             |
+| Filling the matrix with random integers in the range from -100 to 100;                                                             |
+| Output of the original matrix to the screen;                                                                                       |
+| Counting and output the sum of the elements located on both diagonals;                                                             |
+| Counting and output the minimum value among all elements that are above the main diagonal (not including the main diagonal itself);|
+| Counting you output the maximum value among all the elements that are below the side diagonal (not including the diagonal itself); |
+| Counting and output the number of elements whose values are greater than the arithmetic mean of all elements of the matrix;        |
+| Replacing all negative elements of the matrix with their absolute values and output of the modified matrix;                        |
+| Replacing all elements that are divisible by 5 with zeros and output of the final matrix;                                          |
