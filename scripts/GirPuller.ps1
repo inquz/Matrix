@@ -20,8 +20,8 @@ git branch -m v1
 git checkout -b v2
 git add .gitignore
 git commit -m "add gitignore"
-gut push origin v1
-gut push origin v2
+git push origin v1
+git push origin v2
 
 gh repo set-default-branch v2
 git branch -a
