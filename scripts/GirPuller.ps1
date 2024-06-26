@@ -18,6 +18,8 @@ $currentBranch = git rev-parse --abbrev-ref HEAD
 Write-Host "$currentBranch"
 git branch -m v1
 git checkout -b v2
+git add .gitignore
+git commit -m "add gitignore"
 gut push origin v1
 gut push origin v2
 
