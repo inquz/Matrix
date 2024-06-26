@@ -1,3 +1,21 @@
 # ninja log v6
-2	149	7407069820965274	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
-151	323	7407069822454375	training1.exe	7b9eda4d825b8bb3
+6	303	7407131800380938	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+304	420	7407131803361061	training1.exe	7b9eda4d825b8bb3
+8	122	7411329139193622	CMakeFiles/training1.dir/src/matrix.c.obj	b25d0e4fb25b803c
+18	85	7411329759253025	CMakeFiles/training1.dir/src/matrix.c.obj	b25d0e4fb25b803c
+9	70	7411330475338147	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+70	131	7411330475947169	training1.exe	5116c5dc6769a448
+10	78	7411333204285070	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+78	136	7411333204962802	training1.exe	5116c5dc6769a448
+3	68	7411333955156151	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+69	129	7411333955810112	training1.exe	5116c5dc6769a448
+10	63	7411334053454826	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+63	125	7411334053985020	training1.exe	5116c5dc6769a448
+8	73	7411336690273753	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+73	135	7411336690931565	training1.exe	5116c5dc6769a448
+12	81	7411337747835553	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+18	90	7411337747895359	CMakeFiles/training1.dir/src/matrix.c.obj	b25d0e4fb25b803c
+90	151	7411337748622684	training1.exe	5116c5dc6769a448
+4	78	7411379075484807	CMakeFiles/training1.dir/main.c.obj	fccfd7f23a01f0a9
+12	87	7411379075574508	CMakeFiles/training1.dir/src/matrix.c.obj	b25d0e4fb25b803c
+87	146	7411379076315883	training1.exe	5116c5dc6769a448
