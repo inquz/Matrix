@@ -25,10 +25,11 @@ git push origin v1
 git push origin v2
 
 gh repo set-default-branch v2
-git branch -d master
-git push Matrix --delete master
 git branch -a
 git checkout v2
 git add .
 git commit -m "Documentation addition v2"
 git push origin v2
+git checkout v2
+git branch -d master
+git push Matrix --delete master
