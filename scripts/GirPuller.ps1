@@ -6,6 +6,7 @@ $email=git config --global user.email
 
 if(-not $user -or -not $email){
     Write-Host "Ошибка авторизации"
+    exit 1
 }else{
     Write-Host "Успешный вход, пользователь: $user. $email."
 }
