@@ -25,6 +25,8 @@ git push origin v1
 git push origin v2
 
 gh repo set-default-branch v2
+git branch -d master
+git push origin --delete master
 git branch -a
 git checkout v2
 git add .
